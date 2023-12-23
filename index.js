@@ -173,6 +173,10 @@ app.delete('/api/V1/blog-posts/:id', authenticateUser, async (req, res) => {
     }
   });
 
+app.get('/',(req,res)=>{
+  res.send("Welcome to Blog Website");
+})
+
 app.listen(PORT, () => {
   console.log(` app listening on port ${PORT}`)
 })
